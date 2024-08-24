@@ -18,6 +18,7 @@ export const deleteUser = async (
   req: express.Request,
   res: express.Response
 ) => {
+  console.log("from controller");
   try {
     const { id } = req.params;
     const deleteUser = await deleteUserById(id);
